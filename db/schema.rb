@@ -10,7 +10,30 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121124194426) do
+ActiveRecord::Schema.define(:version => 20121124202303) do
+
+  create_table "campaigns", :force => true do |t|
+    t.integer  "campaign_id"
+    t.integer  "email_id"
+    t.integer  "folder_id"
+    t.datetime "launch_time"
+    t.datetime "create_time"
+    t.string   "name"
+    t.string   "subject"
+    t.string   "from_name"
+    t.string   "from_email"
+    t.string   "html"
+    t.integer  "sent"
+    t.integer  "bounces"
+    t.integer  "reaches"
+    t.integer  "opens"
+    t.integer  "clicks"
+    t.integer  "form_submissions"
+    t.integer  "unsubscribes"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
+    t.integer  "user_id"
+  end
 
   create_table "contacts", :force => true do |t|
     t.integer  "contact_id"
@@ -23,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20121124194426) do
     t.boolean  "subscribed"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+    t.integer  "user_id"
   end
 
   create_table "emails", :force => true do |t|
@@ -38,9 +62,11 @@ ActiveRecord::Schema.define(:version => 20121124194426) do
     t.integer  "seeds_id"
     t.datetime "created_at",      :null => false
     t.datetime "updated_at",      :null => false
+    t.integer  "user_id"
   end
 
   create_table "users", :force => true do |t|
+    t.integer  "user_id",    :null => false
     t.string   "firstname"
     t.string   "lastname"
     t.string   "email"

@@ -1,0 +1,90 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Launch time:</b>
+  <%= @campaign.launch_time %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @campaign.name %>
+</p>
+
+<p>
+  <b>Campaign:</b>
+  <%= @campaign.campaign_id %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @campaign.email_id %>
+</p>
+
+<p>
+  <b>Folder:</b>
+  <%= @campaign.folder_id %>
+</p>
+
+<p>
+  <b>Subject:</b>
+  <%= @campaign.subject %>
+</p>
+
+<p>
+  <b>From name:</b>
+  <%= @campaign.from_name %>
+</p>
+
+<p>
+  <b>From email:</b>
+  <%= @campaign.from_email %>
+</p>
+
+<p>
+  <b>Html:</b>
+  <%= @campaign.html %>
+</p>
+
+<p>
+  <b>Create time:</b>
+  <%= @campaign.create_time %>
+</p>
+
+<p>
+  <b>Sent:</b>
+  <%= @campaign.sent %>
+</p>
+
+<p>
+  <b>Bounces:</b>
+  <%= @campaign.bounces %>
+</p>
+
+<p>
+  <b>Reaches:</b>
+  <%= @campaign.reaches %>
+</p>
+
+<p>
+  <b>Open:</b>
+  <%= @campaign.open %>
+</p>
+
+<p>
+  <b>Click:</b>
+  <%= @campaign.click %>
+</p>
+
+<p>
+  <b>Form submissions:</b>
+  <%= @campaign.form_submissions %>
+</p>
+
+<p>
+  <b>Unsubscribes:</b>
+  <%= @campaign.unsubscribes %>
+</p>
+
+
+<%= link_to 'Edit', edit_campaign_path(@campaign) %> |
+<%= link_to 'Back', campaigns_path %>

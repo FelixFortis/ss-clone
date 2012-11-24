@@ -1,0 +1,55 @@
+<h1>Listing campaigns</h1>
+
+<table>
+  <tr>
+    <th>Launch time</th>
+    <th>Name</th>
+    <th>Campaign</th>
+    <th>Email</th>
+    <th>Folder</th>
+    <th>Subject</th>
+    <th>From name</th>
+    <th>From email</th>
+    <th>Html</th>
+    <th>Create time</th>
+    <th>Sent</th>
+    <th>Bounces</th>
+    <th>Reaches</th>
+    <th>Open</th>
+    <th>Click</th>
+    <th>Form submissions</th>
+    <th>Unsubscribes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @campaigns.each do |campaign| %>
+  <tr>
+    <td><%= campaign.launch_time %></td>
+    <td><%= campaign.name %></td>
+    <td><%= campaign.campaign_id %></td>
+    <td><%= campaign.email_id %></td>
+    <td><%= campaign.folder_id %></td>
+    <td><%= campaign.subject %></td>
+    <td><%= campaign.from_name %></td>
+    <td><%= campaign.from_email %></td>
+    <td><%= campaign.html %></td>
+    <td><%= campaign.create_time %></td>
+    <td><%= campaign.sent %></td>
+    <td><%= campaign.bounces %></td>
+    <td><%= campaign.reaches %></td>
+    <td><%= campaign.open %></td>
+    <td><%= campaign.click %></td>
+    <td><%= campaign.form_submissions %></td>
+    <td><%= campaign.unsubscribes %></td>
+    <td><%= link_to 'Show', campaign %></td>
+    <td><%= link_to 'Edit', edit_campaign_path(campaign) %></td>
+    <td><%= link_to 'Destroy', campaign, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Campaign', new_campaign_path %>

@@ -1,0 +1,85 @@
+<%= form_for(@campaign) do |f| %>
+  <% if @campaign.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@campaign.errors.count, "error") %> prohibited this campaign from being saved:</h2>
+
+      <ul>
+      <% @campaign.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :launch_time %><br />
+    <%= f.datetime_select :launch_time %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :campaign_id %><br />
+    <%= f.number_field :campaign_id %>
+  </div>
+  <div class="field">
+    <%= f.label :email_id %><br />
+    <%= f.number_field :email_id %>
+  </div>
+  <div class="field">
+    <%= f.label :folder_id %><br />
+    <%= f.number_field :folder_id %>
+  </div>
+  <div class="field">
+    <%= f.label :subject %><br />
+    <%= f.text_field :subject %>
+  </div>
+  <div class="field">
+    <%= f.label :from_name %><br />
+    <%= f.text_field :from_name %>
+  </div>
+  <div class="field">
+    <%= f.label :from_email %><br />
+    <%= f.text_field :from_email %>
+  </div>
+  <div class="field">
+    <%= f.label :html %><br />
+    <%= f.text_field :html %>
+  </div>
+  <div class="field">
+    <%= f.label :create_time %><br />
+    <%= f.datetime_select :create_time %>
+  </div>
+  <div class="field">
+    <%= f.label :sent %><br />
+    <%= f.number_field :sent %>
+  </div>
+  <div class="field">
+    <%= f.label :bounces %><br />
+    <%= f.number_field :bounces %>
+  </div>
+  <div class="field">
+    <%= f.label :reaches %><br />
+    <%= f.number_field :reaches %>
+  </div>
+  <div class="field">
+    <%= f.label :open %><br />
+    <%= f.number_field :open %>
+  </div>
+  <div class="field">
+    <%= f.label :click %><br />
+    <%= f.number_field :click %>
+  </div>
+  <div class="field">
+    <%= f.label :form_submissions %><br />
+    <%= f.number_field :form_submissions %>
+  </div>
+  <div class="field">
+    <%= f.label :unsubscribes %><br />
+    <%= f.number_field :unsubscribes %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,4 +1,10 @@
 SsClone::Application.routes.draw do
+  resources :emails
+
+
+  resources :contacts
+
+
   resources :users
 
 

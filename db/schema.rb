@@ -10,10 +10,9 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121124202303) do
+ActiveRecord::Schema.define(:version => 20121125111147) do
 
   create_table "campaigns", :force => true do |t|
-    t.integer  "campaign_id"
     t.integer  "email_id"
     t.integer  "folder_id"
     t.datetime "launch_time"
@@ -36,7 +35,6 @@ ActiveRecord::Schema.define(:version => 20121124202303) do
   end
 
   create_table "contacts", :force => true do |t|
-    t.integer  "contact_id"
     t.string   "title"
     t.string   "firstname"
     t.string   "lastname"
@@ -50,7 +48,6 @@ ActiveRecord::Schema.define(:version => 20121124202303) do
   end
 
   create_table "emails", :force => true do |t|
-    t.integer  "email_id"
     t.integer  "folder_id"
     t.string   "name"
     t.string   "subject"
@@ -66,7 +63,6 @@ ActiveRecord::Schema.define(:version => 20121124202303) do
   end
 
   create_table "users", :force => true do |t|
-    t.integer  "user_id",    :null => false
     t.string   "firstname"
     t.string   "lastname"
     t.string   "email"

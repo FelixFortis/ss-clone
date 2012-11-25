@@ -1,4 +1,7 @@
 SsClone::Application.routes.draw do
+  resources :segments
+
+
   resources :campaigns
 
 

@@ -1,0 +1,77 @@
+[33mcommit 3a822071cb116107bcf6a35a199ac5830d750fcf[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Tue Nov 27 21:41:01 2012 +0000
+
+    rspec init and added capybara
+
+[33mcommit 772ce5326999d283a00bf970096223cfeb765b56[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Tue Nov 27 21:27:59 2012 +0000
+
+    sqlite3 for test, pg for prod, add custom1, add rspec
+
+[33mcommit 2676807b5772e262a59897ec40fcea209b927ac9[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Sun Nov 25 13:57:43 2012 +0000
+
+    switched db to postgresql
+
+[33mcommit e754fd2ada0fab10699f8eec296f8fee86c0d042[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Sun Nov 25 13:32:43 2012 +0000
+
+    updated gemfile with pg and installed pg rather than sqlite3
+
+[33mcommit d5e725e8f2628f36b49b04b124f8188946499323[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Sun Nov 25 13:16:13 2012 +0000
+
+    added relationship between segment and contact. updated gemfile with pg
+
+[33mcommit 8e2f7a5cef620b80110734a1dee36a5cbc47dec4[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Sun Nov 25 11:18:10 2012 +0000
+
+    rake segment and add segment_id to contact
+
+[33mcommit 1230008130a3da0145a93f0cddbe7b3acee4e157[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Sun Nov 25 11:15:26 2012 +0000
+
+    create segment and update ids
+
+[33mcommit ce3dec946fade7a3c811f7fc62fae4f5773d5878[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Sat Nov 24 20:29:15 2012 +0000
+
+    update tables with user_id
+
+[33mcommit d37696498d654ced00b0a72a27255e6b7e76ba73[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Sat Nov 24 20:05:44 2012 +0000
+
+    add campaign migration
+
+[33mcommit 61677f07d01acbd9a8fd071414b584d22023a1ca[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Sat Nov 24 19:52:55 2012 +0000
+
+    add contact and email migrations
+
+[33mcommit 24f19148438caed6823e4fa1fa4f5b71669548dc[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Sat Nov 24 19:30:57 2012 +0000
+
+    update readme and add user scaffold migration
+
+[33mcommit a3626b83059c7cf6d43ed5d1231877695a85d035[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Sat Nov 24 19:24:00 2012 +0000
+
+    readme rename
+
+[33mcommit 6ccc678055b7043ee056e396df4c55fc352f5e90[m
+Author: Adam Wenham <adamwenham64@gmail.com>
+Date:   Sat Nov 24 19:10:50 2012 +0000
+
+    initial commit
